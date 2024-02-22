@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+  body {
+    font-family: system-ui;
+    padding: 10px;
+    background: #363333;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #dd1d1d;
+    padding: 5px;
+    border-radius: 5px
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+    color: black;
+  }
+  
+  .leftcolumn {   
+    float: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
